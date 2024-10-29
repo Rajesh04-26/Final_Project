@@ -1,0 +1,87 @@
+/* Reset some defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the "Skip to Main Content" link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #222;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Navigation Styling */
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+}
+.nav-menu li {
+    margin: 0 15px;
+}
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-menu a:hover {
+    color: #ffdd57;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Image Styling with Box Model */
+img {
+    border: 3px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Page 2 (Gallery) Specific Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.gallery img {
+    border-radius: 15px;
+    padding: 4px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Hover Effect */
+.hover-effect:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* nth-child selector example */
+.gallery img:nth-child(odd) {
+    border-radius: 5px;
+}
+.gallery img:nth-child(even) {
+    border-radius: 20px;
+}
